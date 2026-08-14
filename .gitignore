@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# 环境变量（含 API Key，千万别传上去）
+.env
+.env.*
+
+# IDE
+.vscode/
+.idea/
+
+# 数据文件（大文件不上传）
+*.csv
+*.pkl
+*.h5
+*.pt
+*.onnx
+data/
+datasets/
+
+# 系统
+.DS_Store
+Thumbs.db
+
+# 模型权重（太大，不入库）
+*.safetensors
+*.bin
+*.gguf
+models/
