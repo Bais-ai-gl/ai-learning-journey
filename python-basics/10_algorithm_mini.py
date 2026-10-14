@@ -1,4 +1,4 @@
-# 脚本 10：综合小算法
+# Day 1 · 脚本 10：综合小算法
 # 练习：排序、二分查找、字符频率统计（为 LeetCode 预热）
 
 from collections import Counter

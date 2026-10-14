@@ -1,4 +1,4 @@
-# 脚本 9：字符串与正则
+# Day 1 · 脚本 9：字符串与正则
 # 练习：切片、split/join、re 模块
 
 import re

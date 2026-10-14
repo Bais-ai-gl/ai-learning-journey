@@ -1,4 +1,4 @@
-# 脚本 2：列表与字典推导式
+# Day 1 · 脚本 2：列表与字典推导式
 # 练习：推导式（过滤、映射、嵌套）
 
 nums = list(range(1, 21))          # 1~20
@@ -19,3 +19,4 @@ print("偶数的平方：", even_squares)
 print("3的倍数翻倍：", mapped)
 print("奇数平方字典：", square_map)
 print("乘法表前10项：", table[:10])
+print(nums)

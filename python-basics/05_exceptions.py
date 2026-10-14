@@ -1,4 +1,4 @@
-# 脚本 5：异常处理
+# Day 1 · 脚本 5：异常处理
 # 练习：try/except/finally、自定义异常、raise
 
 class ValueTooLargeError(Exception):     # 自定义异常

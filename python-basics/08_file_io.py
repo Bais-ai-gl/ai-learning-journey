@@ -1,4 +1,4 @@
-# 脚本 8：文件读写
+# Day 1 · 脚本 8：文件读写
 # 练习：open/with、读写文本、处理路径
 
 from pathlib import Path

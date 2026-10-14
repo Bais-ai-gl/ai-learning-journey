@@ -1,4 +1,4 @@
-# 脚本 3：函数与参数
+# Day 1 · 脚本 3：函数与参数
 # 练习：默认参数、*args、**kwargs、lambda
 
 def greet(name, greeting="你好"):        # 默认参数
