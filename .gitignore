@@ -32,3 +32,11 @@ Thumbs.db
 *.bin
 *.gguf
 models/
+
+# ===== 微调产物（权重/checkpoint 太大，不入库；可用 train_lora.bat 复现）=====
+finetune/output/
+finetune/merged/
+finetune/LLaMA-Factory/
+finetune/*_log.txt
+finetune/convert_hf_to_gguf.py
+finetune/conversion.py
