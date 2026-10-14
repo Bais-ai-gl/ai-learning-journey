@@ -1,0 +1,10 @@
+{
+  "contract_qa": {
+    "file_name": "data.json",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output"
+    }
+  }
+}

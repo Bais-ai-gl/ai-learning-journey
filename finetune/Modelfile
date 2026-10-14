@@ -1,0 +1,19 @@
+# Day 9：Ollama 部署用 Modelfile（把微调产物导入 Ollama）
+# 用法（见 README.md「四、部署」）：
+#   ollama create qwen2.5-contract-lora -f Modelfile
+# 注意：FROM 后面改成你实际导出的 GGUF 文件路径（LLaMA-Factory export 的产物）。
+FROM ./merged/qwen2.5-7b-contract-lora-merged.gguf
+
+# 固定系统提示词：让模型进入「合同法律助手」角色，输出更稳定
+SYSTEM """你是一名熟悉《中华人民共和国劳动合同法》的法律助手，回答专业、准确、简洁，尽量分点说明。"""
+
+# Qwen2.5 的 chat 模板（与 ollama 官方 qwen2.5 一致；一般从 GGUF 元数据能自动识别，可不写）
+# TEMPLATE """{{ if .System }}<|im_start|>system
+# {{ .System }}<|im_end|>
+# {{ end }}<|im_start|>user
+# {{ .Prompt }}<|im_end|>
+# <|im_start|>assistant
+# """
+
+PARAMETER temperature 0.3
+PARAMETER num_ctx 4096
